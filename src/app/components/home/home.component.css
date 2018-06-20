@@ -1,0 +1,34 @@
+a {
+  color: white;
+  position: relative;
+  font-size: 25px;
+
+}
+
+#sun{
+  max-width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#sunLink {
+  max-width: 20%;
+}
+
+.cdk-overlay-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#title{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}

@@ -1,0 +1,24 @@
+<button mat-button [matMenuTriggerFor]="solarSystem">Our Solar System</button>
+
+<mat-menu #solarSystem="matMenu">
+  <button routerLink="home" mat-menu-item>Home</button>
+  <button routerLink="sun" mat-menu-item>The Sun</button>
+  <button mat-menu-item [matMenuTriggerFor]="innerPlanets">Rocky Inner Planets</button>
+  <button mat-menu-item [matMenuTriggerFor]="outerPlanets">Gas Giant Outer Planets </button>
+</mat-menu>
+
+<mat-menu #innerPlanets="matMenu">
+  <button routerLink="mercury" mat-menu-item>Mercury</button>
+  <button routerLink="venus" mat-menu-item>Venus</button>
+  <button routerLink="earth" mat-menu-item>Earth</button>
+  <button routerLink="mars" mat-menu-item>Mars</button>
+</mat-menu>
+
+<mat-menu #outerPlanets="matMenu">
+  <button routerLink="jupiter" mat-menu-item>Jupiter</button>
+  <button routerLink="saturn" mat-menu-item>Saturn</button>
+  <button routerLink="uranus" mat-menu-item>Uranus</button>
+  <button routerLink="neptune" mat-menu-item>Neptune</button>
+</mat-menu>
+
+
