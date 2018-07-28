@@ -7,42 +7,50 @@
   <img id="sun"  alt="Angular Logo" src="../assets/images/sun.jpg">
 </div>
 
-<h2 text align="center">Let's explore our solar system the Milky Way </h2>
-
-<div align="center">
-  <a [routerLink]="['/sun']">
-    Let's Explore the Sun! <br> <img class="Link"  alt="Angular Logo" src="../assets/images/halloween_sun.jpg">
-  </a>
-</div>
+<h2>Let's explore our solar system the Milky Way</h2>
 
 
-<br>
-<h2 text align="center">The Rocky Inner Planets</h2>
-<br>
-
-<mat-grid-list cols="2" rowHeight="2:1">
+<mat-grid-list cols="1" rowHeight="3:1">
   <mat-grid-tile>
-    <a [routerLink]="['/mercury']">
-       <img alt="Angular Logo" src="../assets/images/mercury.jpg">
+    <a [routerLink]="['/sun']">
+      <img alt="Sun Logo" src="../assets/images/halloween_sun.jpg">
     </a>
-    <mat-grid-tile-footer>
-      Let's Explore Mercury!
-    </mat-grid-tile-footer>
+    <mat-grid-tile-footer>Let's Explore the Sun!</mat-grid-tile-footer>
   </mat-grid-tile>
-
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
 </mat-grid-list>
 
 
+<br>
+<h2>The Rocky Inner Planets</h2>
+<br>
 
-
-
+<mat-grid-list cols="2" rowHeight="2:1" gutterSize="10px">
+  <mat-grid-tile *ngFor="let tile of rockyTiles">
+    <a routerLink="/{{tile.title}}">
+       <img alt="{{tile.title}} Logo" src="../assets/images/{{tile.title}}.jpg">
+    </a>
+    <mat-grid-tile-footer>
+      {{tile.text}}
+    </mat-grid-tile-footer>
+  </mat-grid-tile>
+</mat-grid-list>
 
 
 <br>
-<h2 text align="center">The Gas Giant Outer Planets</h2>
+<h2>The Gas Giant Outer Planets</h2>
+<br>
 
-
-
+<mat-grid-list cols="2" rowHeight="2:1" gutterSize="10px">
+  <mat-grid-tile *ngFor="let tile of gasTiles">
+    <a routerLink="/{{tile.title}}">
+      <img alt="{{tile.title}} Logo" src="../assets/images/{{tile.title}}.jpg">
+    </a>
+    <mat-grid-tile-footer>
+      {{tile.text}}
+    </mat-grid-tile-footer>
+  </mat-grid-tile>
+</mat-grid-list>
+<br>
+<br>
+<br>
+<br>
