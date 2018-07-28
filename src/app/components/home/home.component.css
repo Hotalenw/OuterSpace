@@ -15,8 +15,12 @@ a {
   user-select: none;
 }
 
-#sunLink {
+.Link {
   max-width: 20%;
+}
+
+.innerPlanets {
+  padding-left: 5%;
 }
 
 .cdk-overlay-container {
@@ -31,4 +35,12 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
+}
+
+mat-grid-tile-footer {
+  font-size: 40px;
+}
+
+mat-grid-tile {
+  background: transparent;
 }

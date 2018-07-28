@@ -8,9 +8,41 @@
 </div>
 
 <h2 text align="center">Let's explore our solar system the Milky Way </h2>
-<a [routerLink]="['/sun']">
-  Let's Explore the Sun! <br> <img id="sunLink"  alt="Angular Logo" src="../assets/images/halloween_sun.jpg">
-</a>
+
+<div align="center">
+  <a [routerLink]="['/sun']">
+    Let's Explore the Sun! <br> <img class="Link"  alt="Angular Logo" src="../assets/images/halloween_sun.jpg">
+  </a>
+</div>
+
+
+<br>
+<h2 text align="center">The Rocky Inner Planets</h2>
+<br>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <a [routerLink]="['/mercury']">
+       <img alt="Angular Logo" src="../assets/images/mercury.jpg">
+    </a>
+    <mat-grid-tile-footer>
+      Let's Explore Mercury!
+    </mat-grid-tile-footer>
+  </mat-grid-tile>
+
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
+
+
+
+
+
+
+
+<br>
+<h2 text align="center">The Gas Giant Outer Planets</h2>
 
 
 
