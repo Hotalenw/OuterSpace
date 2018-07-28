@@ -1,0 +1,15 @@
+#sun{
+  max-width: 100%;
+}
+
+.cdk-overlay-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#title{
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
